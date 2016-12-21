@@ -12,7 +12,16 @@ $(document).ready(function(){
     console.log("Poem Button clicked");
     hughesPoem.forEach(function(div){
       console.log(div);
-    });
-});
-});
+
+
 //a function for append word and update currentIndex
+function updatePoem (){
+    var currentIndex = 0;
+  for (var i = 0; i < hughesPoem.length; i++){
+      $("#poemDiv").append(div);
+      currentIndex ++;
+  }
+}
+});
+});
+});

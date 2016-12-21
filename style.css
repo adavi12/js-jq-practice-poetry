@@ -2,5 +2,9 @@ body {
   font-family: sans-serif;
   background-color: peachpuff;
 }
-
+h2{
+  font-size: 28px;
+  text-decoration: underline;
+  font-weight: lighter;
+}
 /* Feel free to add your own style! */
