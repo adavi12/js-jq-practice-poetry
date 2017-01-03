@@ -8,20 +8,13 @@ console.log("JS");
 //document ready with click event
 $(document).ready(function(){
   console.log("JQ");
-  $("#poemButton").click(function(){
-    console.log("Poem Button clicked");
-    hughesPoem.forEach(function(div){
-      console.log(div);
+    $('#poemButton').on('click', addToPoem);
+});
 
-
-//a function for append word and update currentIndex
-function updatePoem (){
-    var currentIndex = 0;
-  for (var i = 0; i < hughesPoem.length; i++){
-      $("#poemDiv").append(div);
-      currentIndex ++;
-  }
-}
-});
-});
-});
+    function addToPoem(){
+        $("#poemDiv").append(hughesPoem[currentIndex] + " ");
+        currentIndex++;
+        if (currentIndex >= hughesPoem.length){
+          currentIndex = 0;
+        }
+     }js
