@@ -11,10 +11,10 @@ $(document).ready(function(){
     $('#poemButton').on('click', addToPoem);
 });
 
-    function addToPoem(){
-        $("#poemDiv").append(hughesPoem[currentIndex] + " ");
-        currentIndex++;
-        if (currentIndex >= hughesPoem.length){
-          currentIndex = 0;
+function addToPoem(){
+  $("#poemDiv").append(hughesPoem[currentIndex] + " ");
+     currentIndex++;
+       if (currentIndex >= hughesPoem.length){
+           currentIndex = 0;
         }
      }
